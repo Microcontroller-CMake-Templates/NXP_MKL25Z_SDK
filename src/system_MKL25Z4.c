@@ -126,6 +126,16 @@ void SystemInit (void) {
 
 }
 
+#ifdef __GNUC__
+/* Dummy exit handler */
+void exit() __attribute__((weak)) {
+  while(1) {
+    
+  }
+}
+#endif
+
+
 /* ----------------------------------------------------------------------------
    -- SystemCoreClockUpdate()
    ---------------------------------------------------------------------------- */
