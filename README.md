@@ -1,2 +1,2 @@
 # NXP_MKL25Z_SDK
-CMSIS SDK for the NXP_MKL25Z series mcu
+CMSIS and device headers from the original SDK package
