@@ -128,7 +128,7 @@ void SystemInit (void) {
 
 #ifdef __GNUC__
 /* Dummy exit handler */
-void exit() __attribute__((weak)) {
+__attribute__((weak)) void exit() {
   while(1) {
     
   }
